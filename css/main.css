@@ -164,4 +164,45 @@ a:hover {
   -moz-column-gap: 40px;
        column-gap: 40px;
   font-size: 14px;
+}
+
+.benefits {
+  padding: 120px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  max-width: 794px;
+  margin: 0 auto;
+}
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 46px;
+}
+.benefits__item h3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.benefits__title-1 {
+  max-width: 193px;
+}
+
+.benefits__title-2 {
+  max-width: 133px;
+}
+
+.benefits__title-3 {
+  max-width: 134px;
+}
+
+.benefits__title-4 {
+  max-width: 124px;
 }/*# sourceMappingURL=main.css.map */
