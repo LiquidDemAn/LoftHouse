@@ -91,6 +91,8 @@ body {
   background-color: #242b33;
   color: #fff;
   font-size: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 a {
@@ -105,8 +107,14 @@ a:hover {
 .container {
   width: 100%;
   max-width: 1140px;
-  padding: 0 15px;
   margin: 0 auto;
+}
+
+.title {
+  color: #d4c17f;
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .header {
@@ -183,7 +191,11 @@ a:hover {
   align-items: center;
   row-gap: 46px;
 }
-.benefits__item h3 {
+.benefits__item:first-child .benefits__item-text {
+  width: 193px;
+}
+
+.benefits__item-text {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -191,18 +203,47 @@ a:hover {
   line-height: 27px;
 }
 
-.benefits__title-1 {
-  max-width: 193px;
+.apartments__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 88px;
 }
 
-.benefits__title-2 {
-  max-width: 133px;
+.apartments__item {
+  position: relative;
+  max-width: 540px;
+  height: 320px;
+}
+.apartments__item::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px double rgba(255, 255, 255, 0.4);
+}
+.apartments__item:hover::after {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+  transform: scale(1.1);
+}
+.apartments__item:hover .apartments__item-img {
+  transition: all 0.2s ease-in;
+  transform: scale(1.1);
 }
 
-.benefits__title-3 {
-  max-width: 134px;
+.apartments__item-img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.benefits__title-4 {
-  max-width: 124px;
+.apartments__item-title {
+  position: absolute;
+  left: 50px;
+  bottom: 44px;
+  right: 20px;
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
