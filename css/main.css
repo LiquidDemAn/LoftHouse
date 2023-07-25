@@ -91,8 +91,6 @@ body {
   background-color: #242b33;
   color: #fff;
   font-size: 16px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 a {
@@ -106,6 +104,7 @@ a:hover {
 
 .container {
   width: 100%;
+  padding: 0 15px;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -246,4 +245,69 @@ a:hover {
   bottom: 44px;
   right: 20px;
   font-size: 24px;
+}
+
+.cta {
+  padding: 180px 0;
+  background: url(../../img/cta/background.jpg) no-repeat center;
+}
+
+.cta__content {
+  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 15px;
+  gap: 30px;
+}
+
+.cta__description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.cta__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 30px;
+}
+
+.cta__input {
+  min-width: 255px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.9;
+  transition: all 0.2s ease-in;
+}
+.cta__input::-moz-placeholder {
+  color: #bebebe;
+}
+.cta__input::placeholder {
+  color: #bebebe;
+}
+.cta__input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cta__disclaimer {
+  color: #e7e7e7;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.23;
+}
+
+.cta__btn {
+  min-width: 255px;
+  padding: 12px 0px;
+  background-color: #d4c17f;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.68;
+  transition: all 0.2s ease-in;
+}
+.cta__btn:hover {
+  background-color: #e5ca6e;
 }/*# sourceMappingURL=main.css.map */
