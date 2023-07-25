@@ -310,4 +310,26 @@ a:hover {
 }
 .cta__btn:hover {
   background-color: #e5ca6e;
+}
+
+.video__link {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  transition: all 0.2s ease-in;
+}
+.video__link:hover {
+  opacity: 0.8;
+}
+.video__link:hover .video__play {
+  transition: all 0.2s ease-in;
+  transform: scale(1.1);
+}
+
+.video__play {
+  position: absolute;
 }/*# sourceMappingURL=main.css.map */
