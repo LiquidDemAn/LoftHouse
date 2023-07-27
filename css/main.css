@@ -116,6 +116,57 @@ a:hover {
   font-weight: 700;
 }
 
+.btn {
+  max-width: 255px;
+  width: 100%;
+  height: 50px;
+  padding: 12px 5px;
+  background-color: #d4c17f;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.68;
+  transition: all 0.2s ease-in;
+}
+.btn:hover {
+  background-color: #e5ca6e;
+}
+
+.form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 30px;
+}
+
+.form-input {
+  max-width: 255px;
+  width: 100%;
+  height: 50px;
+  padding: 12px 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.9;
+  transition: all 0.2s ease-in;
+}
+.form-input::-moz-placeholder {
+  color: #bebebe;
+}
+.form-input::placeholder {
+  color: #bebebe;
+}
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.disclaimer {
+  color: #e7e7e7;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.23;
+}
+
 .header {
   min-height: 840px;
   padding-top: 30px;
@@ -260,58 +311,6 @@ a:hover {
   gap: 30px;
 }
 
-.cta__description {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.cta__form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 35px 30px;
-}
-
-.cta__input {
-  min-width: 255px;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 12px;
-  text-align: center;
-  color: #fff;
-  font-size: 14px;
-  line-height: 1.9;
-  transition: all 0.2s ease-in;
-}
-.cta__input::-moz-placeholder {
-  color: #bebebe;
-}
-.cta__input::placeholder {
-  color: #bebebe;
-}
-.cta__input:focus {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.cta__disclaimer {
-  color: #e7e7e7;
-  text-align: center;
-  font-size: 13px;
-  line-height: 1.23;
-}
-
-.cta__btn {
-  min-width: 255px;
-  padding: 12px 0px;
-  background-color: #d4c17f;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.68;
-  transition: all 0.2s ease-in;
-}
-.cta__btn:hover {
-  background-color: #e5ca6e;
-}
-
 .video__link {
   display: flex;
   width: -moz-max-content;
@@ -342,4 +341,14 @@ a:hover {
   height: 358px;
   margin-top: 88px;
   background-color: #626262;
+}
+
+.feedback {
+  margin-bottom: 180px;
+}
+
+.feedback-form {
+  margin-top: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
