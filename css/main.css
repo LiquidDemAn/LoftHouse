@@ -332,4 +332,14 @@ a:hover {
 
 .video__play {
   position: absolute;
+}
+
+.map-section {
+  margin: 180px 0;
+}
+
+.map {
+  height: 358px;
+  margin-top: 88px;
+  background-color: #626262;
 }/*# sourceMappingURL=main.css.map */
