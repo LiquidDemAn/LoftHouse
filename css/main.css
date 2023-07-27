@@ -167,11 +167,25 @@ a:hover {
   line-height: 1.23;
 }
 
+.email-link {
+  color: #d4c17f;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
 .header {
   min-height: 840px;
   padding-top: 30px;
   padding-bottom: 75px;
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../img/header/header-bg.jpg"), lightgray 50%/cover no-repeat;
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  font-size: 14px;
 }
 
 .header__top {
@@ -214,14 +228,6 @@ a:hover {
 }
 .header__info span {
   font-size: 18px;
-}
-
-.nav__list {
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-  font-size: 14px;
 }
 
 .benefits {
@@ -351,4 +357,42 @@ a:hover {
   margin-top: 50px;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: #2d343c;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer__logo {
+  margin-top: -15px;
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.footer-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.footer-socials__icon svg {
+  fill: red;
 }/*# sourceMappingURL=main.css.map */
