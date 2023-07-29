@@ -1,5 +1,15 @@
 .map-section {
   margin: 180px 0;
+
+  position: relative;
+
+  &::before {
+    content: "V";
+    right: calc(50% + 555px);
+    transform: translate(50%, 0%);
+
+    @include decorNumber;
+  }
 }
 
 .map {

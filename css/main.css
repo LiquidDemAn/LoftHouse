@@ -231,6 +231,7 @@ a:hover {
 }
 
 .benefits {
+  position: relative;
   padding: 120px 0;
   display: flex;
   justify-content: space-between;
@@ -239,6 +240,19 @@ a:hover {
        column-gap: 70px;
   max-width: 794px;
   margin: 0 auto;
+}
+.benefits::after {
+  content: "II";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  line-height: 1.15;
+  font-family: "Playfair Display", serif;
+  opacity: 0.02;
+  font-size: 400px;
+  font-weight: 700;
 }
 
 .benefits__item {
@@ -257,6 +271,24 @@ a:hover {
   font-size: 20px;
   font-weight: 300;
   line-height: 27px;
+}
+
+.apartments {
+  position: relative;
+}
+.apartments::before {
+  content: "III";
+  right: calc(50% + 555px);
+  line-height: 1;
+  transform: translate(50%, 0%);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  line-height: 1.15;
+  font-family: "Playfair Display", serif;
+  opacity: 0.02;
+  font-size: 400px;
+  font-weight: 700;
 }
 
 .apartments__items {
@@ -317,6 +349,24 @@ a:hover {
   gap: 30px;
 }
 
+.video {
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  left: calc(50% + 555px);
+  line-height: 1.5;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  line-height: 1.15;
+  font-family: "Playfair Display", serif;
+  opacity: 0.02;
+  font-size: 400px;
+  font-weight: 700;
+}
+
 .video__link {
   display: flex;
   width: -moz-max-content;
@@ -341,6 +391,20 @@ a:hover {
 
 .map-section {
   margin: 180px 0;
+  position: relative;
+}
+.map-section::before {
+  content: "V";
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  line-height: 1.15;
+  font-family: "Playfair Display", serif;
+  opacity: 0.02;
+  font-size: 400px;
+  font-weight: 700;
 }
 
 .map {
