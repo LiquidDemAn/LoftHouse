@@ -8,3 +8,33 @@
   font-size: 400px;
   font-weight: 700;
 }
+
+@mixin mediaSm {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin mediaXxl {
+  @media (min-width: $xxl) {
+    @content;
+  }
+}
