@@ -121,8 +121,14 @@ a:hover {
 .title {
   color: #d4c17f;
   font-family: "Playfair Display", serif;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+  }
 }
 
 .btn {
@@ -454,15 +460,23 @@ a:hover {
 
 .apartments__items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 88px;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .apartments__items {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 88px;
+    gap: 30px;
+  }
 }
 
 .apartments__item {
   position: relative;
   max-width: 540px;
-  height: 320px;
+  height: auto;
 }
 .apartments__item::after {
   opacity: 0;
@@ -483,6 +497,11 @@ a:hover {
   transition: all 0.2s ease-in;
   transform: scale(1.1);
 }
+@media (min-width: 992px) {
+  .apartments__item {
+    height: 320px;
+  }
+}
 
 .apartments__item-img {
   -o-object-fit: cover;
@@ -491,10 +510,17 @@ a:hover {
 
 .apartments__item-title {
   position: absolute;
-  left: 50px;
-  bottom: 44px;
+  left: 25px;
+  bottom: 30px;
   right: 20px;
-  font-size: 24px;
+  font-size: 18px;
+}
+@media (min-width: 992px) {
+  .apartments__item-title {
+    font-size: 24px;
+    bottom: 44px;
+    left: 50px;
+  }
 }
 
 .cta {
