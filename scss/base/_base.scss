@@ -64,10 +64,6 @@ a {
   &:hover {
     background-color: saturate($accent, 20%);
   }
-
-  @include mediaLg {
-    max-width: 255px;
-  }
 }
 
 .form-wrapper {
@@ -105,10 +101,6 @@ a {
   &:focus {
     background-color: rgba($color: $white, $alpha: 0.3);
   }
-
-  @include mediaLg {
-    width: 255px;
-  }
 }
 
 .disclaimer {
@@ -116,6 +108,11 @@ a {
   text-align: center;
   font-size: 13px;
   line-height: 1.23;
+  grid-row: 2/3;
+
+  @include mediaLg {
+    grid-row: auto;
+  }
 }
 
 .email-link {

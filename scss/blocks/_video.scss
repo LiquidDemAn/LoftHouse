@@ -1,5 +1,6 @@
 .video {
   position: relative;
+  overflow: hidden;
 
   &::after {
     content: "IV";
@@ -13,7 +14,7 @@
 
 .video__link {
   display: flex;
-  width: max-content;
+  max-width: max-content;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -32,4 +33,11 @@
 
 .video__play {
   position: absolute;
+  width: 75px;
+  height: 75px;
+
+  @include mediaSm {
+    width: 100px;
+    height: 100px;
+  }
 }

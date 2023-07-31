@@ -1,9 +1,22 @@
 .feedback {
-  margin-bottom: 180px;
+  margin-bottom: 80px;
+
+  @include mediaLg {
+    margin-bottom: 180px;
+  }
 }
 
 .feedback-form {
-  margin-top: 50px;
-  grid-template-columns: repeat(4, 1fr);
+  margin-top: 25px;
   align-items: center;
+  grid-template-columns: repeat(1, 1fr);
+
+  @include mediaSm {
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mediaLg {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
