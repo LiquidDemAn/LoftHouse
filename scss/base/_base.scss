@@ -51,7 +51,6 @@ a {
 }
 
 .btn {
-  max-width: 80%;
   width: 100%;
   height: 50px;
   padding: 12px 5px;
@@ -77,15 +76,17 @@ a {
   gap: 20px;
   justify-items: center;
 
-  @include mediaLg {
+  @include mediaSm {
     grid-template-columns: repeat(2, 1fr);
-    gap: 35px 30px;
     justify-items: baseline;
+  }
+
+  @include mediaMd {
+    gap: 35px 30px;
   }
 }
 
 .form-input {
-  max-width: 80%;
   width: 100%;
   height: 50px;
   padding: 12px 5px;
@@ -106,7 +107,7 @@ a {
   }
 
   @include mediaLg {
-    max-width: 255px;
+    width: 255px;
   }
 }
 

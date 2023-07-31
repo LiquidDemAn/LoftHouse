@@ -138,7 +138,6 @@ a:hover {
 }
 
 .btn {
-  max-width: 80%;
   width: 100%;
   height: 50px;
   padding: 12px 5px;
@@ -164,16 +163,19 @@ a:hover {
   gap: 20px;
   justify-items: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .form-wrapper {
     grid-template-columns: repeat(2, 1fr);
-    gap: 35px 30px;
     justify-items: baseline;
+  }
+}
+@media (min-width: 768px) {
+  .form-wrapper {
+    gap: 35px 30px;
   }
 }
 
 .form-input {
-  max-width: 80%;
   width: 100%;
   height: 50px;
   padding: 12px 5px;
@@ -195,7 +197,7 @@ a:hover {
 }
 @media (min-width: 992px) {
   .form-input {
-    max-width: 255px;
+    width: 255px;
   }
 }
 
