@@ -128,7 +128,12 @@
             </p>
             <div class="form-wrapper">
               <input class="form-input" type="text" placeholder="Ваше имя" />
-              <input class="form-input" type="tel" placeholder="Ваш телефон" />
+              <input
+                data-tel-input
+                class="form-input"
+                type="tel"
+                placeholder="Ваш телефон"
+              />
               <span class="disclaimer"
                 >*Мы никому не передаем ваши данные. И не сохраняем ваш номер в
                 базу.</span
@@ -164,7 +169,12 @@
               базу.</span
             >
             <input class="form-input" type="text" placeholder="Ваше имя" />
-            <input class="form-input" type="tel" placeholder="Ваш телефон" />
+            <input
+              data-tel-input
+              class="form-input"
+              type="tel"
+              placeholder="Ваш телефон"
+            />
             <button class="btn">Посмотреть район</button>
           </div>
         </div>
@@ -239,5 +249,7 @@
       </div>
     </footer>
   </body>
+  <script src="libs//phoneMask/mask.js"></script>
+  <script src="libs//phoneMask/mask_list.js"></script>
   <script src="script.js"></script>
 </html>
